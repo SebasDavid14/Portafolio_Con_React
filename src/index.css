@@ -324,3 +324,28 @@ body {
   font-size: 0.85rem;
   color: var(--color-texto-suave);
 }
+
+/* --- Versión 5: Estilos para la sección de Habilidades --- */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.skills-intro {
+  color: var(--color-texto-suave);
+  font-size: 0.95rem;
+}
+
+.skill-category {
+  background-color: var(--color-superficie);
+  padding: 1.25rem;
+  border-radius: var(--radio);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-category h3 {
+  color: var(--color-acento);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
