@@ -5,6 +5,7 @@ import { Contact } from "./components/Contact"
 import { Routes, Route } from "react-router"
 import { NotFound } from "./components/NotFound"
 import { Navbar } from "./components/Navbar"
+import { Footer } from "./components/Footer"
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+      <Footer />
       <Navbar />
     </>
   )

@@ -349,3 +349,35 @@ body {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
 }
+
+/* --- Versión 6: Estilos para botón CV y Footer --- */
+
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radio);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cv-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.app-footer {
+  text-align: center;
+  padding: 1rem;
+  color: var(--color-texto-suave);
+  font-size: 0.75rem;
+  background-color: var(--color-fondo);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: var(--alto-nav); /* Deja espacio para que la barra inferior no lo tape */
+}
