@@ -1,12 +1,12 @@
 import { Screen } from './Screen'
 
 export const Home = () => {
-  const name = 'Juan Sebastian David Castaño'
+  const name = 'Sebastian David'
   const role = 'Aprendiz'
 
   return (
     <Screen title="Inicio">
-      {/* Cabecera del perfil: Nombre a la izquierda, avatar a la derecha */}
+      {/* Cabecera del perfil horizontal */}
       <section className="profile-header">
         <div className="profile-info">
           <h2>{ name }</h2>
@@ -14,8 +14,16 @@ export const Home = () => {
           <p className="hero-bio">
             Mi primer portafolio en React con jsx. Enfocado en desarrollo de software y web.
           </p>
+          {/* Botón interactivo para simular descarga de CV */}
+          <a 
+            href="#cv" 
+            onClick={(e) => { e.preventDefault(); alert('¡Próximamente descarga de CV disponible!'); }} 
+            className="cv-button"
+          >
+            📄 Descargar CV
+          </a>
         </div>
-        <div className="avatar">JD</div>
+        <div className="avatar">SD</div>
       </section>
 
       {/* Datos adicionales de Inicio */}
