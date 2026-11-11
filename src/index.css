@@ -149,3 +149,48 @@ body {
     margin: 0 auto;
   }
 }
+
+/* --- Versión 2: Rediseño de Perfil e Inicio --- */
+
+/* Cabecera del perfil horizontal */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-superficie);
+  padding: var(--espacio);
+  border-radius: var(--radio);
+  margin-bottom: var(--espacio);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.hero-bio {
+  color: var(--color-texto-suave);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* Ajuste del avatar a la derecha sin centrado automático */
+.profile-header .avatar {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* Secciones adicionales del contenido */
+.about-section, .skills-highlight {
+  background-color: var(--color-superficie);
+  padding: var(--espacio);
+  border-radius: var(--radio);
+  margin-bottom: var(--espacio);
+}
+
+.about-section h3, .skills-highlight h3 {
+  color: var(--color-acento);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
