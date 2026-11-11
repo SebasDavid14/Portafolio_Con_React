@@ -1,0 +1,149 @@
+/* 1. Variables: valores que reutilizamos en todo el proyecto */
+:root {
+  --color-fondo: #0f172a;
+  --color-superficie: #1e293b;
+  --color-texto: #f1f5f9;
+  --color-texto-suave: #94a3b8;
+  --color-acento: #38bdf8;
+  --espacio: 1rem;
+  --radio: 0.75rem;
+  --alto-nav: 4rem;
+}
+
+/* 2. Normalización: todos los navegadores parten de lo mismo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3. Base, pensada primero para el celular */
+body {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+
+/* 4. Pantalla: el contenedor de cada página */
+.screen {
+  min-height: 100vh;
+  padding: var(--espacio);
+  padding-bottom: calc(var(--alto-nav) + var(--espacio));
+}
+
+.screen-title {
+  font-size: 1.75rem;
+  margin-bottom: var(--espacio);
+}
+
+/* 5. Inicio */
+.hero {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto var(--espacio);
+  border-radius: 50%;
+  background-color: var(--color-acento);
+  color: var(--color-fondo);
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-role {
+  color: var(--color-acento);
+  font-weight: 600;
+}
+
+.hero-text {
+  color: var(--color-texto-suave);
+  margin-top: var(--espacio);
+}
+
+/* 6. Tarjetas de proyecto */
+.card-list {
+  display: grid;
+  gap: var(--espacio);
+}
+
+.card {
+  background-color: var(--color-superficie);
+  padding: var(--espacio);
+  border-radius: var(--radio);
+}
+
+.card-text {
+  color: var(--color-texto-suave);
+  margin: 0.5rem 0;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-acento);
+  color: var(--color-acento);
+}
+
+/* 7. Contacto */
+.contact-list {
+  display: grid;
+  gap: var(--espacio);
+  list-style: none;
+}
+
+.contact-link {
+  display: block;
+  background-color: var(--color-superficie);
+  padding: var(--espacio);
+  border-radius: var(--radio);
+  color: var(--color-texto);
+  text-decoration: none;
+}
+
+/* 8. Barra de navegación inferior, como en una app móvil */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--alto-nav);
+  background-color: var(--color-superficie);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--color-texto-suave);
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link.active {
+  color: var(--color-acento);
+  font-weight: 700;
+}
+
+/* 9. Pantallas grandes: lo único que cambia de 768px en adelante */
+@media (min-width: 768px) {
+  .screen {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}
