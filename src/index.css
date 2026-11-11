@@ -29,7 +29,7 @@ body {
 .screen {
   min-height: 100vh;
   padding: var(--espacio);
-  padding-bottom: calc(var(--alto-nav) + var(--espacio));
+  padding-top: calc(var(--alto-nav) + var(--espacio));
 }
 
 .screen-title {
@@ -118,7 +118,9 @@ body {
 /* 8. Barra de navegación inferior, como en una app móvil */
 .navbar {
   position: fixed;
-  bottom: 0;
+  top: 0;
+  bottom: auto;
+  border-bottom: 1px solid var(--color-superficie);
   left: 0;
   width: 100%;
   height: var(--alto-nav);
