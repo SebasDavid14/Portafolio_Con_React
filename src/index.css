@@ -249,3 +249,78 @@ body {
   color: #fbbf24;
   border: 1px solid #f59e0b;
 }
+
+/* --- Versión 4: Estilos mejorados para la sección de Contacto --- */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio);
+}
+
+.contact-intro {
+  color: var(--color-texto-suave);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  background-color: var(--color-superficie);
+  padding: 1.25rem;
+  border-radius: var(--radio);
+}
+
+.contact-list {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-superficie);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radio);
+  color: var(--color-texto);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-acento);
+  box-shadow: 0 6px 15px rgba(56, 189, 248, 0.15);
+}
+
+/* Estilo distintivo para el botón de WhatsApp */
+.whatsapp-link:hover {
+  border-color: #22c55e;
+  box-shadow: 0 6px 15px rgba(34, 197, 94, 0.2);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 50%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info strong {
+  font-size: 1rem;
+  color: var(--color-texto);
+}
+
+.contact-info span {
+  font-size: 0.85rem;
+  color: var(--color-texto-suave);
+}
