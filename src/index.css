@@ -194,3 +194,58 @@ body {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
+
+/* --- Versión 3: Estilos y Estados para Proyectos --- */
+
+/* Cuadrícula responsiva para las tarjetas */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--espacio);
+}
+
+/* Alineación de título e insignia de estado en la tarjeta */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-header h2 {
+  font-size: 1.25rem;
+  color: var(--color-texto);
+}
+
+/* Efectos visuales de animación en las tarjetas */
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Insignias de Estado (Badges) */
+.status-badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-completed {
+  background-color: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid #22c55e;
+}
+
+.status-in-progress {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid #f59e0b;
+}
